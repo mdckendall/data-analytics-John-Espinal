@@ -5,14 +5,15 @@ import java.util.ArrayList;
 
 class Main {
   
-  public static void main(String[] args) throws FileNotFoundException {
+  public static void main(String[] args) {
     int choice;
     do {
       System.out.print(
           "Press 1 to learn about salary.\r\nPress 2 to learn about the job.\r\nPress 3 to learn about demand.\r\nPress 4 to view current students.\r\nPress 5 to quit.\r\n");
       Scanner keyboard = new Scanner(System.in);
       choice = keyboard.nextInt();
-
+      
+     
       switch (choice) {
         case 1:
           System.out.println("$98,345 average salary in South Florida!");
@@ -32,7 +33,7 @@ class Main {
             while (fileScanner.hasNextLine()) {
               arrayList.add(new String(fileScanner.nextLine()));
             }
-          } catch (FileNotFoundException exception) {
+          } catch (FileNotFoundException f) {
             System.out.println("File not found.");
           }
           System.out.println("Current Students:");
