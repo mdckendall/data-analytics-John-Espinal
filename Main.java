@@ -30,7 +30,6 @@ class Main {
           try {
             FileReader fr = new FileReader("names.txt");
             Scanner fileScanner = new Scanner(fr);
-            fileScanner.nextLine();
             while (fileScanner.hasNextLine()) {
               arrayList.add(new String(fileScanner.nextLine()));
             }
