@@ -7,10 +7,11 @@ class Main {
   
   public static void main(String[] args) {
     int choice;
+    Scanner keyboard = new Scanner(System.in);
     do {
       System.out.print(
           "Press 1 to learn about salary.\r\nPress 2 to learn about the job.\r\nPress 3 to learn about demand.\r\nPress 4 to view current students.\r\nPress 5 to quit.\r\n");
-      Scanner keyboard = new Scanner(System.in);
+      
       choice = keyboard.nextInt();
       
      
@@ -50,4 +51,6 @@ class Main {
 
   } 
 }
+  
+
   
