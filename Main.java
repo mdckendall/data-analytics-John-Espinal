@@ -30,7 +30,7 @@ class Main {
             Scanner fileScanner = new Scanner(fr);
             fileScanner.nextLine();
             while (fileScanner.hasNextLine()) {
-              arrayList.add(fileScanner.nextLine());
+              arrayList.add(new String(fileScanner.nextLine()));
             }
           } catch (FileNotFoundException exception) {
             System.out.println("File not found.");
